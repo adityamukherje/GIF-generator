@@ -1,0 +1,16 @@
+import Random from "./components/Random"
+import Tag from "./components/Tag"
+
+export default function App() {
+  return (
+    <div className = ' flex flex-col w-full h-full background relative items-center '>
+      <hi className =' bg-white w-11/12 rounded-lg text-center mt-[40px] px-10 py-2 text-4xl font-bold '>
+        Random GIF
+      </hi>
+      <div className=" flex flex-col w-full items-center gap-y-10 mt-[30px] " >
+        <Random/>
+        <Tag/>
+      </div>
+    </div>
+  )
+}
